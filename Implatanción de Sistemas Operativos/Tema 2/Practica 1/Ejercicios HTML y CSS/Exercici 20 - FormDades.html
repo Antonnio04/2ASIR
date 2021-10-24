@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+        <title>Form Dades</title>
+        <style>
+            body{
+                font-family: Arial;
+            }
+        </style>
+        </head>
+        <body>
+            <h1>Rellena tus Datos</h1>
+            <form action="formDades">
+               <p>Nombre</p> 
+               <input type="text" name="Nombre" size="20" maxlength="50">
+               </br>
+               <p>Apellidos</p> 
+               <input type="text" name="Apellidos" size="20" maxlength="50">
+               </br>
+               <p>Email</p> 
+               <input type="text" name="Email" size="20" maxlength="50">
+               </br>
+               <p>DNI</p> 
+               <input type="text" name="DNI" size="20" maxlength="9">
+               </br>
+               <p>Idioma materno</p>
+               <input type="radio">Castellano </br>
+               <input type="radio">Valenciano</br>
+               <input type="radio">Otro</br>
+               <p>Subir mi foto <input type="file"></p>
+               <p><input type="checkbox"> Permitir que otros puedan ver mis datos</p>
+               <input type="submit" value="Guardar cambios"><input type="submit" value="Borrar datos introducidos">
+
+    
+            </form>
+        </body>
+</html>

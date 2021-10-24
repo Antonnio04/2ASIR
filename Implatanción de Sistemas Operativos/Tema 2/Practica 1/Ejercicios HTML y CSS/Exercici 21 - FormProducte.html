@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+        <title>Form Producte</title>
+        <style>
+            body{
+                font-family: Arial;
+            }
+            fieldset{
+                width: 400px;
+                height: 300px;
+            }
+            #fieldset2 {
+                width: 400px;
+                height: 150px;     
+            }
+            input[type=number]{
+                width: 60px;
+            }
+        </style>
+        </head>
+        <body>
+            <h3>Información sobre el producto</h3>
+            <fieldset>
+                <legend>Datos Básicos</legend>
+                <p>Nombre 
+                <input type="text" name="Nombre" size="50" maxlength="50"></p>
+
+                <p>Descripción 
+                <textarea name="Descripción" rows="6" cols="43"></textarea></p>
+                Foto <input type="text" size="20"> <input type="submit" value="Elegir..."></br>
+             </br>
+                <input type="checkbox"> Añadir contador de vistas
+            </fieldset>
+            <fieldset id="fieldset2">
+                <legend>Datos económicos</legend>
+                Precio <input type="number" min="1" max= "99999" maxlength="7"> € &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Impuestos<label for="Impuestos">
+                    <select name="Impuestos">
+                        <optgroup>
+                        <option value="4%">4%</option>
+                        <option value="7%">7%</option>
+                        <option value="16%">16%</option>
+                        <option value="21%">21%</option>
+                        </optgroup>
+                    </select>
+                <p>Promoción</br>
+                <input type="radio">Ninguno </br>
+                <input type="radio">Transporte gratuito</br>
+                <input type="radio">Descuento 5%</br></p>
+            </fieldset>
+        </body>
+</html>
